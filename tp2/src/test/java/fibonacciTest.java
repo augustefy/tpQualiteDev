@@ -41,9 +41,6 @@ public class fibonacciTest {
     @ParameterizedTest
     @MethodSource("fibonacciTestCases")
     @DisplayName("Test de la fonction Fibonacci avec différents nombres")
-
-    
-
     void testFibonacci(BigInteger input, BigInteger expected) {
         assertEquals(expected, Fibonacci.fibonacci(input));
     }
